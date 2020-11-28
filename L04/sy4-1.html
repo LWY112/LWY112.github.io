@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style type="text/css">
+    body
+    {
+        width: 800px;
+        margin: 0 auto;
+    }
+    #box
+    {
+        background-color: #999999;
+        width: 900px;
+        height: 700px;
+        border: 1px solid black;
+        font-family: 楷体;
+        color: black;
+        font-size: 20px;
+        text-indent: 2em;
+        font-weight: bolder;
+    }
+    #header
+    {
+        width: 800px;
+        height: 180px;
+        margin-top: 20px;
+        margin-left:50px;
+        background-color: red;
+        border: 2px solid yellow;
+        font-family: 楷体;
+        font-size: 20px;
+        text-indent: 2em;
+        font-weight: bolder;
+        color: yellow;
+    }
+    #header_logo
+    {
+        float: left;
+        width: 200px;
+        height:50px;
+        background-color: yellow;
+        border: 2px solid black;
+        position: relative;
+        left:20px;
+        font-family: 楷体;
+        font-size: 20px;
+        text-indent: 2em;
+        font-weight: bolder;
+        color: #777777;
+
+    }
+    #header_banner
+    {
+        float: right;
+        width: 500px;
+        height: 50px;
+        background-color:blue;
+        border: 2px solid black;
+        position: relative;
+        right:20px;
+        font-family: 楷体;
+        font-size: 20px;
+        text-indent: 2em;
+        font-weight: bolder;
+        color: white;
+    }
+    #header_menu
+    {
+        float: left;
+        width:760px;
+        height: 45px;
+        border: 2px solid black;
+        margin-top: 10px;
+        margin-left:20px;
+        background-color: darkgreen;
+        font-family: 楷体;
+        font-size: 20px;
+        text-indent: 2em;
+        font-weight: bolder;
+        color: white;
+    }
+    #main
+    {
+        width:800px;
+        height: 350px;
+        background-color: #00A000;
+        margin-top: 20px;
+        margin-left:50px;
+        border: 2px solid yellow;
+        font-family: 楷体;
+        font-size: 20px;
+        text-indent: 2em;
+        font-weight: bolder;
+        color: white;
+    }
+    #main_sidebar
+    {
+        float: left;
+        width:200px;
+        height: 270px;
+        background-color: #0040D0;
+        border: 2px solid white;
+        font-family: 楷体;
+        font-size: 20px;
+        text-indent: 2em;
+        font-weight: bolder;
+        color: white;
+        position: relative;
+        left:20px;
+    }
+    #main_content
+    {
+        float: right;
+        width:500px;
+        height: 270px;
+        background-color: #779dbd;
+        border: 2px solid white;
+        margin-right:30px;
+        font-family: 楷体;
+        font-size: 20px;
+        text-indent: 2em;
+        font-weight: bolder;
+        color: white;
+    }
+    #foot
+    {
+        float: left;
+        width:800px;
+        height: 45px;
+        background-color: red;
+        border: 2px solid yellow;
+        margin-top: 20px;
+        margin-left:50px;
+        font-family: 楷体;
+        font-size: 20px;
+        text-indent: 2em;
+        font-weight: bolder;
+        color: white;
+    }
+</style>
+</head>
+<body>
+<div id="box"><p>div->box 包含下面3部分结构div （header,main,footer), 布局网页宽度和居中</p>
+    <div id="header"><p>div->header 包含下面3个结构div 布局头部高度和主要背景</p>
+        <div id="header_logo">div->id=logo</div><div id="header_banner">div->id=banner</div>
+        <div id="header_menu"><p>div->id=menu</p></div>
+    </div>
+    <div id="main"><p>div->id=main 包含下面2个div(siderbar,content)</p>
+        <div id="main_sidebar"><p>div->id=sidebar</p></div><div id="main_content"><p>div->id-content</p></div>
+    </div>
+    <div id="foot"><p>div->id=footer</p></div>
+</div>
+</body>
+</html>
