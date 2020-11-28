@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单制作</title>
+</head>
+<style type="text/css">
+    body
+    {
+        width: 800px;
+        margin: 0 auto;
+    }
+    form
+    {
+    border:1px solid blue;
+    }
+    table
+    {
+        width:800px;
+        boder-top:1px solid #999;
+        boder-left:1px solid #999;
+        border-spacing: 0;
+        border-color:#779dbd;
+        font-family:Arial;
+        font-weight: bolder;
+        cellpadding:"3";
+        cellspacing:"2";
+    }
+    table td
+    {
+        padding: 10px 30px;
+        border-bottom: 1px solid #999;
+        border-right: 1px solid #999;
+        border-color:#779dbd;
+    }
+
+</style>
+<body>
+<form action="" method="post" name="form1">
+    <table align="center" >
+    <tr>
+        <td>姓名:</td>
+        <td>
+        <input type="text" name="username" id="username" size="12" maxlength="12" />*
+        </td>
+    </tr>
+    <tr>
+        <td>性别:</td>
+        <td>
+            <input type="radio" name="sex" value="男" /> 男
+            <input type="radio" name="sex" value="女" /> 女*
+        </td>
+    </tr>
+    <tr>
+        <td>出生日期:</td>
+        <td>
+            <input type="text" name="year" id="year" size="12" maxlength="4" />年
+            <input type="text" name="month" id="month" size="12" maxlength="4" />月
+            <input type="text" name="day" id="day" size="12" maxlength="4" />日*
+        </td>
+    </tr>
+    <tr>
+        <td>文化程度:</td>
+        <td>
+            <select name="education">
+                <option value="小学">小学</option>
+                <option value="初中">初中</option>
+                <option value="高中" selected>高中</option>
+                <option value="大学">大学</option>
+                <option value="研究生">研究生</option>
+                <option value="博士">博士</option>
+
+            </select>*
+        </td>
+    </tr>
+    <tr>
+        <td>所在省份：</td>
+        <td>
+        <select name="education">
+            <option value=""上海>上海</option>
+            <option value="湖南">湖南</option>
+            <option value="北京" selected>北京</option>
+            <option value="江西">江西</option>
+            <option value="广东">广东</option>
+            <option value="福建">福建</option>
+        </select>*
+        </td>
+    </tr>
+    <tr>
+        <td>联系地址：</td>
+        <td>
+        <input type="text" name="address" id="address" size="12" maxlength="24" />*
+        </td>
+    </tr>
+    <tr>
+        <td>邮政编码：</td>
+        <td>
+            <input type="text" name="code" id="code" size="12" maxlength="24" />*
+        </td>
+    </tr>
+    <tr>
+        <td>联系电话：</td>
+        <td>
+            <input  type="tel" name="tel" id="tel" size="11" maxlength="11" />*
+        </td>
+    </tr>
+    <tr>
+        <td>电子邮箱：</td>
+        <td>
+            <input type="email" name="email" id="email" size="20" maxlength="20" />
+        </td>
+    </tr>
+    <tr>
+        <td>类别：</td>
+        <td>
+            <select name="kind">
+                <option value="函授" selected > 函授</option>
+            </select>*
+        </td>
+    </tr>
+    <tr>
+        <td>报考层次：</td>
+        <td>
+            <select name="lever">
+                <option value="初级">初级</option>
+                <option value="中级">中级</option>
+                <option value="高级">高级</option>
+            </select>*
+        </td>
+    </tr>
+    <tr>
+        <td>报考专业：</td>
+        <td>
+            <select name="profession">
+                <option value="国家摄影等级考评" selected>国家摄影等级考评</option>
+            </select>*
+        </td>
+    </tr>
+    <tr>
+        <td>备注：</td>
+        <td><textarea name="note" cols="50" rows="4"></textarea> </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td align="center" >
+            <input type="submit" name="Submit" value="提交" />
+            <input type="reset" name="Submit2" value="重写" />
+        </td>
+    </tr>
+    </table>
+</form>
+
+</body>
+</html>
